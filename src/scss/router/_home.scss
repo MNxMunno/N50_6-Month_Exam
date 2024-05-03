@@ -1,0 +1,29 @@
+.products {
+  padding: 50px 0;
+  .container {
+    .btn {
+      width: 200px;
+      margin: auto;
+      padding-top: 40px;
+      button {
+        padding: 10px 40px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        text-align: center;
+        font-family: Lato;
+        transition: 0.2s;
+        font-size: 16px;
+        font-weight: 600;
+        &:hover {
+          background: #3bb77e;
+          border: 1px solid #3bb77e;
+          color: #fff;
+        }
+        &:active {
+          background: #1c5a3d;
+          border: 1px solid #3bb77e;
+        }
+      }
+    }
+  }
+}

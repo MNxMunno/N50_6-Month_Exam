@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Lato;
+  src: url(../assets/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../assets/fonts/Quicksand-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1626px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+// @import "../scss/components/header";
+@import "../scss/components/footer";
+@import "../scss/components/header";
+@import "../scss/components/swiper";
+@import "../scss/router/admin";
+@import "../scss/router/home";
+@import "../scss/router/singleRouute";
+@import "../scss/router/login";
+@import "../scss/static/banner";
+@import "../scss/static/products";
+
+.top {
+  padding: 5px 0;
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      p {
+        font-family: Lato;
+        padding-right: 5px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 13px;
+        text-align: left;
+        color: #7e7e7e;
+        border-right: 1px solid #7e7e7e;
+        span {
+          font-family: Lato;
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 13px;
+          text-align: left;
+          color: #3bb77e;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 999px) {
+    & {
+      display: none;
+    }
+  }
+}
