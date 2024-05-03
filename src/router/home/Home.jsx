@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Products from "../../static/products/Products";
+import Category from "../../components/category/Category";
 import { useFetch } from "../../hooks/useFetch";
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
     <main>
       <section className="products">
         <div className="container">
-          {/* <Products loading={loading} data={data?.data} /> */}
+          <Category />
+          <Products loading={loading} data={data?.data} />
           <div className="btn">
             <button onClick={() => setCount((p) => p + 1)}>See More</button>
           </div>

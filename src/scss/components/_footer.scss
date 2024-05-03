@@ -43,6 +43,11 @@ footer {
           color: #3bb77e;
         }
       }
+      .application {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
     }
   }
   .footer__bottom {
