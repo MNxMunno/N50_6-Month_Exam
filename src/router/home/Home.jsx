@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Products from "../../static/products/Products";
 import Category from "../../components/category/Category";
 import { useFetch } from "../../hooks/useFetch";
-
+import Swiper from "../../components/swiper/Swiper";
 const Home = () => {
   const [count, setCount] = useState(1);
   let url = `/products?limit=${count * 5}`;
@@ -12,6 +12,7 @@ const Home = () => {
     <main>
       <section className="products">
         <div className="container">
+          <Swiper />
           <Category />
           <Products loading={loading} data={data?.data} />
           <div className="btn">
