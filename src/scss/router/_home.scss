@@ -1,6 +1,21 @@
 .products {
   padding: 50px 0;
   .container {
+    .content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 32px;
+      h2 {
+        font-family: Quicksand;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.4px;
+        text-align: left;
+        color: #253d4e;
+        padding-bottom: 44px;
+      }
+    }
     .btn {
       width: 200px;
       margin: auto;

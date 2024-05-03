@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/product/:id" element={<SingleRoute />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

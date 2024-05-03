@@ -33,6 +33,7 @@ export default function App() {
           <div className="swiper__content swiper__content-1 container">
             <h1>Everyday Fresh & Clean with Our Products</h1>
             <p>Save up to 50% off on your first order</p>
+
             <form>
               <input
                 type="text"
