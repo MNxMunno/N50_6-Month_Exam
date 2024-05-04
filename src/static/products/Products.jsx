@@ -20,6 +20,7 @@ const Products = ({ data, loading }) => {
         </button>
         <button>
           <FaCartShopping />
+          Add
         </button>
       </div>
     </div>
