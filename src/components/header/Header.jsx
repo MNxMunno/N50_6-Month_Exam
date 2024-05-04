@@ -9,6 +9,7 @@ import { LuGitCompare } from "react-icons/lu";
 import { BiSupport } from "react-icons/bi";
 import logo from "../../assets/images/logo.svg";
 import SideTop from "../site__top/SiteTop";
+import { RiAdminLine } from "react-icons/ri";
 
 function Header() {
   const [toggel, setToggel] = useState(false);
@@ -58,7 +59,8 @@ function Header() {
                 <span>Login</span>
               </NavLink>
               <NavLink to={"/admin"} className="navbar__item">
-                <FaRegUser />
+                <RiAdminLine />
+
                 <span>Admin</span>
               </NavLink>
             </div>
