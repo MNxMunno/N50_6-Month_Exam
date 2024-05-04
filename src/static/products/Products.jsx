@@ -1,6 +1,7 @@
 import React from "react";
 import Skeleton from "../../components/skeleton/Skeleton";
 import { Link } from "react-router-dom";
+import { FaCartShopping } from "react-icons/fa6";
 
 const Products = ({ data, loading }) => {
   let card = data?.map((element) => (
@@ -12,6 +13,14 @@ const Products = ({ data, loading }) => {
         <b>{element.category}</b>
         <h3 title={element.title}>{element.title}</h3>
         <p>⭐{element.rating.rate}</p>
+      </div>
+      <div className="btns">
+        <button>
+          {element.price} <del>{element.price * 2}</del>
+        </button>
+        <button>
+          <FaCartShopping />
+        </button>
       </div>
     </div>
   ));

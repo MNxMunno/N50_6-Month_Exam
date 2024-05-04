@@ -1,41 +1,81 @@
-.cards_pro{
-    display: flex;
-    align-items: center;
-    justify-content: center;gap: 20px;
-    flex-wrap: wrap;
-    .card{
-        background: #fff;
-        border: 1px solid #ccc;
-        border-radius: 12px;
-        overflow: hidden;
-        width: 280px;
-        padding: 10px;
-        img{
-            width: 100%;
-            height: 200px;
-            object-fit: contain;
-        }
-        .card__content{
-            padding: 10px 5px;
-            b{
-                display: block;
-            }
-            h3{
-                display: -webkit-box;
-              -webkit-box-orient: vertical;
-              -webkit-line-clamp: 1;
-              overflow: hidden;
-              padding: 15px 0 0 0;
-              font-family: sans-serif;
-              // font-weight: 600;
-              font-size: 20px;
-              cursor: pointer;
-              transition: 0.4s;
-    
-              &:hover {
-                color: rgb(18, 180, 250);
-              }
-            }
-        }
+.cards_pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  .card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 280px;
+    padding: 10px;
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
     }
+    .card__content {
+      padding: 10px 5px;
+      b {
+        display: block;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #adadad;
+      }
+      h3 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        padding: 15px 0 0 0;
+        font-family: sans-serif;
+        // font-weight: 600;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.4s;
+        font-family: Quicksand;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        text-align: left;
+        color: #253d4e;
+
+        &:hover {
+          color: rgb(18, 180, 250);
+        }
+      }
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      button {
+        font-family: Quicksand;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #3bb77e;
+        border: 1px solid #3bb77e;
+        padding: 5px;
+        border-radius: 8px;
+        del {
+          font-family: Quicksand;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          text-align: left;
+          color: #adadad;
+        }
+      }
+    }
+  }
 }
