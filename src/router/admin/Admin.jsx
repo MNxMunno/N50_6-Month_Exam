@@ -1,34 +1,65 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-// import img from "../../assets/images/admin-hero.png";
+import img from "../../assets/images/admin.png";
 
 const Admin = () => {
+  const data = [
+    {
+      id: 1,
+      title: "01. Visit Feedback",
+      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+      elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+      leo.`,
+    },
+    {
+      id: 2,
+      title: "02. Employer Services",
+      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+      elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+      leo.`,
+    },
+    {
+      id: 3,
+      title: "03. Billing Inquiries",
+      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+      elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+      leo.`,
+    },
+    {
+      id: 4,
+      title: "04.General Inquiries",
+      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+      elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+      leo.`,
+    },
+  ];
+
+  const card = data?.map((el) => (
+    <div className="card" key={el.id}>
+      <h2>{el.title}</h2>
+      <p>{el.text}</p>
+    </div>
+  ));
   return (
-    <section className="admin" style={{ paddingTop: "120px" }}>
+    <section className="admin-section" style={{ paddingTop: "120px" }}>
       <div className="container">
-        <div className="cards">
-          <div className="card">
-            <h1>Admin panel</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
-              recusandae necessitatibus quasi incidunt alias adipisci pariatur
-              earum iure beatae assumenda rerum quod. Tempora magni autem a
-              voluptatibus neque.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae
-              rerum cum accusamus magni consequuntur architecto, ipsum deleniti
-              expedita doloribus suscipit voluptatum eius perferendis amet!.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium, maxime amet architecto est exercitationem optio ea
-              maiores corporis beatae, dolores doloribus libero nesciunt qui
-              illum? Voluptates deserunt adipisci voluptatem magni sunt sed
-              blanditiis quod aspernatur! Iusto?
-            </p>
+        <div className="content">
+          <div className="cards">
+            <div className="card">
+              <b>How can help you ?</b>
+              <h1>Admin panel</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div className="card childCard">{card}</div>
           </div>
-          <div className="card">{/* <img src={img} alt="" /> */}</div>
+          <img className="map" src={img} alt="img" />
         </div>
       </div>
     </section>

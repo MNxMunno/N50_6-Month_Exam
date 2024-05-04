@@ -1,37 +1,71 @@
-.admin {
+.admin-section {
   padding: 0 0 50px;
-  .cards {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    .card {
-      max-width: 629px;
-      img {
-        width: 100%;
+  .content {
+    .cards {
+      padding-bottom: 68px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      flex-wrap: wrap;
+      gap: 32px;
+      // justify-content: center;
+      .card {
+        b {
+          font-family: Quicksand;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28.8px;
+          text-align: left;
+          color: #3bb77e;
+        }
+        h1 {
+          font-family: Quicksand;
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 57.6px;
+          text-align: left;
+          color: #253d4e;
+        }
+        p {
+          max-width: 405px;
+          padding-top: 25px;
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: #7e7e7e;
+        }
       }
-      p {
-        font-family: sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24.5px;
-        letter-spacing: 0.47999998927116394px;
-        text-align: left;
-        color: #7a7a7a;
+      .childCard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        // flex-wrap: wrap;
+        .card {
+          width: 300px;
+        }
       }
-      p + p {
-        padding-top: 28px;
+    }
+
+    .map {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1040px) {
+    .content {
+      .cards {
+        display: flex;
+        flex-direction: column;
       }
-      h1 {
-        font-family: sans-serif;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 46px;
-        letter-spacing: 0.47999998927116394px;
-        text-align: left;
-        color: #212529;
-        padding-bottom: 23px;
+    }
+  }
+  @media only screen and (max-width: 666px) {
+    .content {
+      .cards {
+        .childCard {
+          display: flex;
+          flex-wrap: wrap;
+        }
       }
     }
   }

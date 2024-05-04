@@ -176,6 +176,46 @@
           color: #7e7e7e;
           padding-top: 12px;
         }
+        .btns {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          flex-wrap: wrap;
+          button {
+            font-family: Quicksand;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 17px;
+            text-align: center;
+            color: #7e7e7e;
+            transition: 0.3s;
+            padding: 12px 25px;
+            border: 1px solid #eee;
+            border-radius: 28px;
+            &:hover {
+              color: #3bb77e;
+              box-shadow: 0px 0px 10px rgba(106, 106, 106, 0.2);
+            }
+            &:active {
+              color: #fff;
+              background: #3bb77e;
+              box-shadow: 0px 0px 10px rgba(45, 224, 102, 0.2);
+            }
+          }
+        }
+        h3 {
+          padding-top: 33px;
+          width: 100%;
+          font-family: Quicksand;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28.8px;
+          text-align: left;
+          color: #253d4e;
+          border-bottom: 2px solid #eee;
+          padding-bottom: 15px;
+        }
       }
       .right__cards {
         display: flex;

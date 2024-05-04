@@ -129,6 +129,12 @@ const SingleRoute = () => {
               </div>
             </div>
             <div className="card__info">
+              <div className="btns">
+                <button>Description</button>
+                <button>Additional info</button>
+                <button>Vendor</button>
+                <button>Reviews (3)</button>
+              </div>
               <p>
                 Uninhibited carnally hired played in whimpered dear gorilla
                 koala depending and much yikes off far quetzal goodness and from
@@ -144,6 +150,7 @@ const SingleRoute = () => {
                 the bucolically hey precarious goldfinch mastodon goodness
                 gnashed a jellyfish and one however because.
               </p>
+
               <p>
                 Laconic overheard dear woodchuck wow this outrageously taut
                 beaver hey hello far meadowlark imitatively egregiously hugged
@@ -153,6 +160,7 @@ const SingleRoute = () => {
                 where crud then below after jeez enchanting drunkenly more much
                 wow callously irrespective limpet.
               </p>
+              <h3>Packaging & Delivery</h3>
               <p>
                 Less lion goodness that euphemistically robin expeditiously
                 bluebird smugly scratched far while thus cackled sheepishly
@@ -169,6 +177,23 @@ const SingleRoute = () => {
                 blindly sentimental whimpered less across objectively fanciful
                 grimaced wildly some wow and rose jeepers outgrew lugubrious
                 luridly irrationally attractively dachshund.
+              </p>
+              <h3>Suggested Use</h3>
+              <p>Refrigeration not necessary.</p>
+              <p>Stir before serving</p>
+              <h3>Other Ingredients</h3>
+              <p>Organic raw pecans, organic raw cashews.</p>
+              <p>
+                This butter was produced using a LTG (Low Temperature Grinding)
+                process
+              </p>
+              <p>
+                Made in machinery that processes tree nuts but does not process
+                peanuts, gluten, dairy or soy
+              </p>
+              <h3>Warnings</h3>
+              <p>
+                Oil separation occurs naturally. May contain pieces of shell.
               </p>
             </div>
           </div>
