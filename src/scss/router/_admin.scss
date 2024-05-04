@@ -127,6 +127,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 32px;
+      flex-wrap: wrap;
       form {
         display: flex;
         align-items: center;
@@ -171,6 +172,11 @@
           border-radius: 18px;
         }
       }
+      .card {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
   @media only screen and (max-width: 1040px) {
@@ -187,6 +193,22 @@
         .childCard {
           display: flex;
           flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 474px) {
+    .content {
+      .dropCards {
+        .card {
+          form {
+            input {
+              width: 300px;
+            }
+            textarea {
+              width: 300px;
+            }
+          }
         }
       }
     }

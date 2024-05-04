@@ -109,7 +109,7 @@ const Admin = () => {
                 <input type="email" placeholder="Your Email" />
                 <input type="tel" placeholder="Your Phone" />
                 <input type="text" placeholder="Subject" />
-                <textarea name="text" id="text" rows="10" cols="107"></textarea>
+                <textarea name="text" id="text" rows="10" cols="50"></textarea>
                 <button type="submit">Send message</button>
               </form>
             </div>
