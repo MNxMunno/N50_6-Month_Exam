@@ -37,7 +37,7 @@ const SingleRoute = () => {
                   height={250}
                   alt=""
                 />
-                <div className="imgs" style={{ display: "flex", gap: "32px" }}>
+                <div className="imgss">
                   <div className="imgs card">
                     <img src={data?.data.image} width={80} height={80} alt="" />
                   </div>
