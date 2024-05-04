@@ -9,6 +9,12 @@
       gap: 32px;
       // justify-content: center;
       .card {
+        &:hover {
+          h2 {
+            color: #3bb77e;
+          }
+        }
+        transition: 0.2s;
         b {
           font-family: Quicksand;
           font-size: 24px;
@@ -35,11 +41,28 @@
           text-align: left;
           color: #7e7e7e;
         }
+        h2 {
+          font-family: Quicksand;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          text-align: left;
+          color: #253d4e;
+        }
       }
       .childCard {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 32px;
+
+        p {
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: #7e7e7e;
+        }
         // flex-wrap: wrap;
         .card {
           width: 300px;

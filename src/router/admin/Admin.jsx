@@ -33,6 +33,39 @@ const Admin = () => {
       leo.`,
     },
   ];
+  const map = [
+    {
+      id: 1,
+      text: `205 North Michigan Avenue, Suite 810
+      Chicago, 60601, USA
+      Phone: (123) 456-7890
+      Email: contact@Evara.com`,
+      title: "Office",
+    },
+    {
+      id: 2,
+      text: `205 North Michigan Avenue, Suite 810
+      Chicago, 60601, USA
+      Phone: (123) 456-7890
+      Email: contact@Evara.com`,
+      title: "Studio",
+    },
+    {
+      id: 3,
+      text: `205 North Michigan Avenue, Suite 810
+      Chicago, 60601, USA
+      Phone: (123) 456-7890
+      Email: contact@Evara.com`,
+      title: "Shop",
+    },
+  ];
+
+  const mapCard = map?.map((el) => (
+    <div key={el.id}>
+      <h3>{el.title}</h3>
+      <p>{el.text}</p>
+    </div>
+  ));
 
   const card = data?.map((el) => (
     <div className="card" key={el.id}>
