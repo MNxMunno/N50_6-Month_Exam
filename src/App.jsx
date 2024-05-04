@@ -10,6 +10,8 @@ import NotFound from "./router/not-found/NotFound";
 
 import { Route, Routes } from "react-router-dom";
 import Auth from "./router/auth/Auth";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
@@ -19,11 +21,12 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Auth />}>
-          <Route path="/admin" element={<Admin />} />
+          <Route path="admin" element={<Admin />} />
         </Route>
         <Route path="/product/:id" element={<SingleRoute />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <ToastContainer />
       <Footer />
     </>
   );

@@ -1,0 +1,74 @@
+.singleRoute {
+  padding-top: 90px;
+  .content {
+    padding-bottom: 50px;
+    &__card {
+      .cards {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+        flex-wrap: wrap;
+        .card {
+          .imgs {
+            padding-top: 30px;
+          }
+          .hero {
+            max-width: 500px;
+            width: 100%;
+            object-fit: contain;
+          }
+          img {
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 15px;
+          }
+          h1 {
+            max-width: 444px;
+            font-family: Quicksand;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: left;
+            color: #253d4e;
+          }
+          .rating {
+            padding: 17px 0 34px;
+            font-family: Quicksand;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: left;
+            color: #6b6b6b;
+          }
+          b {
+            font-family: Quicksand;
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 58px;
+            text-align: left;
+            color: #3bb77e;
+
+            del {
+              font-family: Quicksand;
+              font-size: 28px;
+              font-weight: 700;
+              line-height: 28px;
+              text-align: left;
+              color: #6b6b6b;
+            }
+          }
+          .desc {
+            padding-top: 31px;
+            max-width: 466px;
+            font-family: Lato;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #7e7e7e;
+          }
+        }
+      }
+    }
+  }
+}

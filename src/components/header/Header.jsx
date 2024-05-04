@@ -57,6 +57,10 @@ function Header() {
                 <FaRegUser />
                 <span>Login</span>
               </NavLink>
+              <NavLink to={"/admin"} className="navbar__item">
+                <FaRegUser />
+                <span>Admin</span>
+              </NavLink>
             </div>
           </nav>
         </div>
