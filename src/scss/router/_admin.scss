@@ -73,6 +73,105 @@
     .map {
       width: 100%;
     }
+    .mapCards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      padding: 40px 0;
+      .mapCard {
+        width: 240px;
+        h3 {
+          font-family: Quicksand;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28.8px;
+          text-align: left;
+          color: #3bb77e;
+        }
+        p {
+          padding: 18px 0 24px;
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: #7e7e7e;
+        }
+        .btn__map {
+          background: #3bb77e;
+          padding: 0 10px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          border-radius: 8px;
+          p {
+            font-family: Quicksand;
+            font-size: 12px;
+            font-weight: 600;
+            // line-height: 21.6px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #fff;
+          }
+          svg {
+            color: #fff;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .dropCards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      form {
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+
+        gap: 24px;
+        flex-wrap: wrap;
+        input {
+          width: 390px;
+
+          outline: none;
+          padding: 10px 15px;
+          border: 1px solid #eee;
+          border-radius: 8px;
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.2px;
+          text-align: left;
+          color: #7e7e7e;
+        }
+        textarea {
+          resize: none;
+          outline: none;
+          padding: 15px;
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.2px;
+          text-align: left;
+          color: #7e7e7e;
+        }
+        button {
+          font-family: Quicksand;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: center;
+          color: #fff;
+          background: #253d4e;
+          padding: 10px 22px;
+          border-radius: 18px;
+        }
+      }
+    }
   }
   @media only screen and (max-width: 1040px) {
     .content {

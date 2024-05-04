@@ -1,6 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import img from "../../assets/images/admin.png";
+import Banner from "../../static/banner/Banner";
+import { LuMapPin } from "react-icons/lu";
+import gril from "../../assets/images/gril.png";
 
 const Admin = () => {
   const data = [
@@ -61,9 +64,14 @@ const Admin = () => {
   ];
 
   const mapCard = map?.map((el) => (
-    <div key={el.id}>
+    <div key={el.id} className="mapCard">
       <h3>{el.title}</h3>
       <p>{el.text}</p>
+      <button className="btn__map">
+        <LuMapPin />
+
+        <p>View map</p>
+      </button>
     </div>
   ));
 
@@ -93,8 +101,25 @@ const Admin = () => {
             <div className="card childCard">{card}</div>
           </div>
           <img className="map" src={img} alt="img" />
+          <div className="mapCards">{mapCard}</div>
+          <div className="dropCards">
+            <div className="card">
+              <form>
+                <input type="text" placeholder="First Name" />
+                <input type="email" placeholder="Your Email" />
+                <input type="tel" placeholder="Your Phone" />
+                <input type="text" placeholder="Subject" />
+                <textarea name="text" id="text" rows="10" cols="107"></textarea>
+                <button type="submit">Send message</button>
+              </form>
+            </div>
+            <div className="card">
+              <img src={gril} alt="" />
+            </div>
+          </div>
         </div>
       </div>
+      <Banner />
     </section>
   );
 };
