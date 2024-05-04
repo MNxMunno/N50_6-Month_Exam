@@ -62,6 +62,9 @@ const Admin = () => {
       title: "Shop",
     },
   ];
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   const mapCard = map?.map((el) => (
     <div key={el.id} className="mapCard">
@@ -104,7 +107,7 @@ const Admin = () => {
           <div className="mapCards">{mapCard}</div>
           <div className="dropCards">
             <div className="card">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="First Name" />
                 <input type="email" placeholder="Your Email" />
                 <input type="tel" placeholder="Your Phone" />

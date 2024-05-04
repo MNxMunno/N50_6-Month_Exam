@@ -39,17 +39,17 @@ function Header() {
                 <IoHome />
                 <span>Bosh Sahifa</span>
               </NavLink>
-              <NavLink to={"/"} className="navbar__item">
+              <NavLink to={"/compare"} className="navbar__item">
                 <LuGitCompare />
 
                 <span>Compare</span>
               </NavLink>
-              <NavLink to={"/"} className="navbar__item">
+              <NavLink to={"/wishlist"} className="navbar__item">
                 <FaRegHeart />
 
                 <span>Wishlist</span>
               </NavLink>
-              <NavLink to={"/"} className="navbar__item">
+              <NavLink to={"/cart"} className="navbar__item">
                 <FiShoppingCart />
                 <span>Cart</span>
               </NavLink>
