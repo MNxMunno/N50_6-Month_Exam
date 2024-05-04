@@ -6,6 +6,13 @@ import Loading from "../../components/loading/Loading";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { PiArrowBendDownRightBold } from "react-icons/pi";
+import { CiFilter } from "react-icons/ci";
+
+import Box from "@mui/material/Box/Box";
+import Slider from "@mui/material/Slider";
+function valuetext(value) {
+  return `${value}°C`;
+}
 
 const SingleRoute = () => {
   const { id } = useParams();
@@ -20,6 +27,45 @@ const SingleRoute = () => {
   };
   const dec = () => {
     setCount(count - 1);
+  };
+  const cateData = [
+    {
+      id: 1,
+      img: "https://i.postimg.cc/zX0229wc/right-1.png",
+      rate: 5,
+    },
+    {
+      id: 2,
+      img: "https://i.postimg.cc/fknzGVhM/right-2.png",
+      rate: 6,
+    },
+    {
+      id: 3,
+      img: "https://i.postimg.cc/3JYJFD9Z/right-3.png",
+      rate: 7,
+    },
+    {
+      id: 4,
+      img: "https://i.postimg.cc/Sxj4gL9c/right-4.png",
+      rate: 12,
+    },
+    {
+      id: 5,
+      img: "https://i.postimg.cc/cJQbh6FQ/right-5.png",
+      rate: 16,
+    },
+  ];
+  const card = cateData?.map((el) => (
+    <div key={el.id} className="right_card">
+      <img src={el.img} alt="img" />
+      <p>{el.rate}</p>
+    </div>
+  ));
+
+  const [value, setValue] = React.useState([20, 37]);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
   };
 
   return (
@@ -39,16 +85,16 @@ const SingleRoute = () => {
                 />
                 <div className="imgss">
                   <div className="imgs card">
-                    <img src={data?.data.image} width={80} height={80} alt="" />
+                    <img src={data?.data.image} />
                   </div>
                   <div className="imgs card">
-                    <img src={data?.data.image} width={80} height={80} alt="" />
+                    <img src={data?.data.image} />
                   </div>
                   <div className="imgs card">
-                    <img src={data?.data.image} width={80} height={80} alt="" />
+                    <img src={data?.data.image} />
                   </div>
                   <div className="imgs card">
-                    <img src={data?.data.image} width={80} height={80} alt="" />
+                    <img src={data?.data.image} />
                   </div>
                 </div>
               </div>
@@ -82,8 +128,148 @@ const SingleRoute = () => {
                 </div>
               </div>
             </div>
+            <div className="card__info">
+              <p>
+                Uninhibited carnally hired played in whimpered dear gorilla
+                koala depending and much yikes off far quetzal goodness and from
+                for grimaced goodness unaccountably and meadowlark near
+                unblushingly crucial scallop tightly neurotic hungrily some and
+                dear furiously this apart.
+              </p>
+              <p>
+                Spluttered narrowly yikes left moth in yikes bowed this that
+                grizzly much hello on spoon-fed that alas rethought much
+                decently richly and wow against the frequent fluidly at
+                formidable acceptably flapped besides and much circa far over
+                the bucolically hey precarious goldfinch mastodon goodness
+                gnashed a jellyfish and one however because.
+              </p>
+              <p>
+                Laconic overheard dear woodchuck wow this outrageously taut
+                beaver hey hello far meadowlark imitatively egregiously hugged
+                that yikes minimally unanimous pouted flirtatiously as beaver
+                beheld above forward energetic across this jeepers beneficently
+                cockily less a the raucously that magic upheld far so the this
+                where crud then below after jeez enchanting drunkenly more much
+                wow callously irrespective limpet.
+              </p>
+              <p>
+                Less lion goodness that euphemistically robin expeditiously
+                bluebird smugly scratched far while thus cackled sheepishly
+                rigid after due one assenting regarding censorious while
+                occasional or this more crane went more as this less much amid
+                overhung anathematic because much held one exuberantly sheep
+                goodness so where rat wry well concomitantly.
+              </p>
+              <p>
+                Scallop or far crud plain remarkably far by thus far iguana lewd
+                precociously and and less rattlesnake contrary caustic wow this
+                near alas and next and pled the yikes articulate about as less
+                cackled dalmatian in much less well jeering for the thanks
+                blindly sentimental whimpered less across objectively fanciful
+                grimaced wildly some wow and rose jeepers outgrew lugubrious
+                luridly irrationally attractively dachshund.
+              </p>
+            </div>
           </div>
-          <div className="content__card"></div>
+          <div className="content__card">
+            <div className="right__cards">
+              <div className="card">
+                <h3>Category</h3>
+                <div className="content">{card}</div>
+              </div>
+
+              <div className="card">
+                <h3>Fill by price</h3>
+                <Box sx={{ width: 300 }}>
+                  <Slider
+                    getAriaLabel={() => "Temperature range"}
+                    value={value}
+                    onChange={handleChange}
+                    valueLabelDisplay="auto"
+                    getAriaValueText={valuetext}
+                  />
+                </Box>
+                <div className="price">
+                  <p>
+                    From: <span>$500</span>
+                  </p>
+                  <p>
+                    To: <span>$1,000</span>
+                  </p>
+                </div>
+                <h4>Color</h4>
+                <div className="check">
+                  <input type="checkbox" />
+                  <p>Red (56)</p>
+                </div>
+                <div className="check">
+                  <input type="checkbox" />
+                  <p>Green (78)</p>
+                </div>
+                <div className="check">
+                  <input type="checkbox" />
+                  <p>Blue (54)</p>
+                </div>
+                <h4>Item Condition</h4>
+                <div className="check">
+                  <input type="checkbox" />
+                  <p>New (1506)</p>
+                </div>
+                <div className="check">
+                  <input type="checkbox" />
+                  <p>Refurbished (27)</p>
+                </div>
+                <div className="check">
+                  <input type="checkbox" />
+                  <p>Used (45)</p>
+                </div>
+                <button className="filter">
+                  <CiFilter />
+                  <b>Fillter</b>
+                </button>
+              </div>
+              <div className="card">
+                <h3>New products</h3>
+                <div className="pro">
+                  <img
+                    src={data?.data.image}
+                    width={60}
+                    height={60}
+                    alt="img"
+                  />
+                  <div className="title">
+                    <h4>{data?.data.category}</h4>
+                    <b>$ {data?.data.price} ⭐</b>
+                  </div>
+                </div>
+                <div className="pro">
+                  <img
+                    src={data?.data.image}
+                    width={60}
+                    height={60}
+                    alt="img"
+                  />
+                  <div className="title">
+                    <h4>{data?.data.category}</h4>
+                    <b>$ {data?.data.price} ⭐</b>
+                  </div>
+                </div>
+                <div className="pro">
+                  <img
+                    src={data?.data.image}
+                    width={60}
+                    height={60}
+                    alt="img"
+                  />
+                  <div className="title">
+                    <h4>{data?.data.category}</h4>
+                    <b>$ {data?.data.price} ⭐</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <Banner />
       </div>
